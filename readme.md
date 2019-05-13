@@ -1,8 +1,17 @@
-This repository contains network traces that represent substation communication under different scenarios (Normal, Disturbance and Attacks). The reference substation one-diagram is shown in Figure 1. 
+This repository contains network traces that describe GOOSE communications in a substation. The reference one-diagram used for generating the network traces is shown in Figure 1. It consists of 4-buses, and 18 LEDs. The line feeders (1-6) are connected to different loads while the rest of the feeders connect to other nearby substations to provide redundancy. The IEDs communicate among themselves using the GOOSE protocol defined in the IEC 61850 standard. Based on the substation diagram, we consider three scenarios to generate the network traces
 
-![alt text](https://www.overleaf.com/project/5c89e48e54c39a58ab59ad93/file/5cbe86157fc67069ab12de21?format=png)
+![one-line substation diagram](one-line.png)
 
-Each folder represents one scenario, it contains： 
+
+__1. Normal Scenario __
+
+__2. Disturbance Scenario __
+
+__3. Attack Scenario __
+
+
+
+Each folder in this repository represents one scenario and contains： 
 	1. One pcap file: captures GOOSE packets from 18 IEDs during 10 mins. 
 	2. 18 csv files: list transmitted data from 18 IEDs at every second during 10 mins.
 
